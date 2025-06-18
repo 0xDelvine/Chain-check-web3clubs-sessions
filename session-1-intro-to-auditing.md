@@ -1,10 +1,6 @@
-# 🛠 Session 1 – Technical Introduction to Smart Contract Auditing
-
-This session is designed for intermediate Solidity developers and security enthusiasts looking to transition into smart contract auditing. You'll get a deep understanding of the audit workflow, the distinction between different security roles, vulnerability categories, real-world exploits, and the professional tools used in the industry.
-
+# 🛠 Session 1 – Introduction to Smart Contract Auditing
 
 ## 🔍 What is a Smart Contract Audit?
-
 
 A **smart contract audit** is a comprehensive security review of a contract's source code and architecture to identify vulnerabilities before or after deployment. It typically includes:
 
@@ -12,7 +8,7 @@ A **smart contract audit** is a comprehensive security review of a contract's so
 * Access control validation
 * Economic/exploit simulations
 * Manual code review and test reproduction
-* Use of automated tooling (static analysis, fuzzing, symbolic execution)
+* Use of automated tooling (static analysis, fuzzing)
 * Threat modeling and adversarial thinking
 
 Audits **reduce risk**, **build trust**, and are a **non-negotiable step** before launching production smart contracts.
@@ -39,7 +35,7 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 | Focus       | Exploiting unknown bugs in the wild  | Preventing exploits before or after deployment |
 | Process     | Open-ended, CTF-style investigation  | Structured, scoped, spec-aligned review        |
 | Deliverable | PoCs, CVEs, writeups, bounty reports | Formal reports with severity + mitigation      |
-| Environment | Deployed protocols, public targets   | NDA clients, internal systems                  |
+| Environment | Deployed protocols, public targets   | Both deployed and protocols on testing phase.  |
 
 
 ## 🎯 Bug Bounty vs Audit
@@ -114,10 +110,12 @@ A professional auditor’s toolkit includes:
 
 ### 🛡️ Bug Bounty Platforms
 
-* [**Immunefi**](https://immunefi.com): Leading Web3 bug bounty platform with large payout pools.
-* [**Code4rena**](https://code4rena.com): Competitive audit contests with leaderboard-style payouts.
-* [**Hats Finance**](https://hats.finance): Decentralized security incentivization protocol with vault-based bounties.
-
+* [**Immunefi**](https://immunefi.com)
+* [**Cantina**](https://cantina.xyz)
+* [**Code4rena**](https://code4rena.com)
+* [**Codehawks**](https://codehawks.cyfrin.io/)
+* [**Sherlock**](https://audits.sherlock.xyz)
+* [**Hats Finance**](https://hats.finance):
 
 ## 🗺 Roadmap to Becoming a Smart Contract Auditor
 
@@ -132,6 +130,7 @@ A professional auditor’s toolkit includes:
 3. **Reproduce Exploits**
 
    * Fork hacks from [rekt.news](https://rekt.news), write Foundry tests
+   * https://github.com/SunWeb3Sec/DeFiHackLabs - proof of concept showcasing past DeFi hacking incidents: Study scripts used and use           them to try and recreate the hacks/exploits.
 
 4. **Tool Mastery**
 
@@ -139,9 +138,10 @@ A professional auditor’s toolkit includes:
    * Write fuzz tests in Echidna or Forge
 
 5. **Join Audit Contests**
-
-   * Compete in Code4rena/Sherlock
-   * Learn from winning reports
+  
+   * Check out first flights by Cyfrin Codehawks: [codehawks first-flights](https://codehawks.cyfrin.io/first-flights)
+   * Compete in audit & Bug bounty platforms Code4rena/Sherlock/Cantina
+   * Learn from writing reports
 
 6. **Build a Portfolio**
 
@@ -149,7 +149,7 @@ A professional auditor’s toolkit includes:
    * Share GitHub reviews or test repos
 
 
-## 💣 Case Studies – Notable Web3 Hacks
+## 💣 Case Studies – Notable Web3 Hacks [rekt.news](https://rekt.news)
 
 | Protocol          | Vulnerability             | Technique                    | Loss   |
 | ----------------- | ------------------------- | ---------------------------- | ------ |
@@ -158,7 +158,4 @@ A professional auditor’s toolkit includes:
 | **Euler**         | Improper asset accounting | Flashloan + liquidation loop | \$197M |
 | **Curve (Vyper)** | Storage misalignment      | Compiler behavior on proxy   | \$61M  |
 | **Beanstalk**     | Governance takeover       | Flashloan + voting           | \$182M |
-
-](https://rekt.news) exploit and reproduce the PoC
-* Analyze 2 public audit reports (e.g., Code4rena, Spearbit) and summarize their structure + findings
 
