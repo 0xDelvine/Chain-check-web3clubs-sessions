@@ -1,8 +1,5 @@
-# 🛠 Session 1 – Technical Introduction to Smart Contract Auditing
-
-This session is designed for intermediate Solidity developers and security enthusiasts looking to transition into smart contract auditing. You'll get a deep understanding of the audit workflow, the distinction between different security roles, vulnerability categories, real-world exploits, and the professional tools used in the industry.
-
-
+# 🛠 Session 1 – Introduction to Smart Contract Auditing
+----
 ## 🔍 What is a Smart Contract Audit?
 
 
@@ -12,7 +9,7 @@ A **smart contract audit** is a comprehensive security review of a contract's so
 * Access control validation
 * Economic/exploit simulations
 * Manual code review and test reproduction
-* Use of automated tooling (static analysis, fuzzing, symbolic execution)
+* Use of automated tooling (static analysis, fuzzing)
 * Threat modeling and adversarial thinking
 
 Audits **reduce risk**, **build trust**, and are a **non-negotiable step** before launching production smart contracts.
@@ -21,7 +18,7 @@ Audits **reduce risk**, **build trust**, and are a **non-negotiable step** befor
 
 Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 
-* Often secure millions to billions in value
+* Often holds millions to billions in value
 * Cannot be patched like traditional systems
 * Are exposed to a global adversarial audience 24/7
 
@@ -30,7 +27,8 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 * Fund drains (flash loans, logic errors, faulty access control)
 * Protocol takeovers (governance exploits)
 * User trust loss and regulatory scrutiny
-
+  ### :bangbang: **<ins>Disclaimer:</ins>    Doing audits isn’t just due diligence—it’s essential for every protocol.**
+  
 
 ## 🧠 Security Researcher vs Smart Contract Auditor
 
@@ -39,8 +37,13 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 | Focus       | Exploiting unknown bugs in the wild  | Preventing exploits before or after deployment |
 | Process     | Open-ended, CTF-style investigation  | Structured, scoped, spec-aligned review        |
 | Deliverable | PoCs, CVEs, writeups, bounty reports | Formal reports with severity + mitigation      |
-| Environment | Deployed protocols, public targets   | NDA clients, internal systems                  |
+| Environment | Deployed protocols, public targets   | Both deployed and protocols on testing phase.  |
 
+- [Spearbit's tweet](https://x.com/spearbit/status/1681078061003952129) highlights the contrast between an auditor and a security researcher.
+  ----
+  ![](https://github.com/0xDelvine/Chain-check-web3clubs-sessions/blob/main/chaincheckImg/Screenshot%20From%202025-06-18%2015-13-47.png)
+  ----
+  ![](https://github.com/0xDelvine/Chain-check-web3clubs-sessions/blob/main/chaincheckImg/Screenshot%20From%202025-06-18%2015-14-02.png)
 
 ## 🎯 Bug Bounty vs Audit
 
@@ -51,6 +54,13 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 | Incentive | Pay-per-vuln                    | Paid engagement                          |
 | Guarantee | Opportunistic coverage          | Deterministic & scoped coverage          |
 
+### 🛡️ Bug Bounty/contest Platforms
+1) [**Immunefi**](https://immunefi.com)
+2) [**Cantina**](https://cantina.xyz)
+3) [**Code4rena**](https://code4rena.com)
+4) [**Codehawks**](https://codehawks.cyfrin.io/)
+5) [**Sherlock**](https://audits.sherlock.xyz)
+6) [**Hats Finance**](https://hats.finance)
 
 ## ⚠️ Vulnerability Categories
 
@@ -69,6 +79,7 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 
 
 ## 📄 Structure of a Professional Audit Report
+- Differ
 
 1. **Executive Summary**
 
@@ -112,26 +123,55 @@ A professional auditor’s toolkit includes:
 * [**Certora Prover**](https://www.certora.com/): Rule-based formal verification for business logic constraints.
 * [**Scribble**](https://github.com/ConsenSys/scribble): Specification language that compiles into runtime assertions for invariant testing.
 
-### 🛡️ Bug Bounty Platforms
-
-* [**Immunefi**](https://immunefi.com): Leading Web3 bug bounty platform with large payout pools.
-* [**Code4rena**](https://code4rena.com): Competitive audit contests with leaderboard-style payouts.
-* [**Hats Finance**](https://hats.finance): Decentralized security incentivization protocol with vault-based bounties.
+### 🛡️ Get protocols from [platfroms](https://github.com/0xDelvine/Chain-check-web3clubs-sessions/edit/main/session-1-intro-to-auditing.md#%EF%B8%8F-bug-bountycontest-platforms) mentioned above.
 
 
 ## 🗺 Roadmap to Becoming a Smart Contract Auditor
 
-1. **Deepen Solidity + EVM Knowledge**
-
-   * Understand storage layout, delegatecall, assembly, proxies
+1. **Understand Smart Contract Language** e.g Solidity + EVM Knowledge*
+Some of the resources to get you started in solidity:
+   - [Patrick Collins](https://x.com/PatrickAlphaC)
+     - Patrick Collins youtube channel : https://www.youtube.com/@PatrickAlphaC
+     - Cyfrin updraft: https://updraft.cyfrin.io
+   - CryptoZombie: http://cryptozombies.io
+   - Smart Contract Programmer - https://www.youtube.com/@smartcontractprogrammer
+   - Solidity Docs: https://docs.soliditylang.org/en/v0.8.11/
+   - Solidity-by-example: https://solidity-by-example.org
+   - Dapp University: https://www.youtube.com/@DappUniversity
+   - and many more resources you find best:smiley:
 
 2. **Study Real Audits**
 
-   * Analyze reports from Trail of Bits, OpenZeppelin, Spearbit
+   * Analyze reports from various well known auditing/security researching companies
+     1) Spearbit SR Company
+        - Github Repo - https://github.com/spearbit/portfolio
+     2) Guardian Audits
+        - Github Repo - https://github.com/GuardianAudits/Audits
+     3) Pashov Audit Group
+        - Github Repo - https://github.com/pashov/audits
+     4) Shieldfy-Security
+        - Github Repo - https://github.com/shieldify-security/audits-portfolio
+           
+        
+    * Analyze reports from past audit competitions and bug bounty events
+      - [Solodit](https://solodit.xyz) - platform that compiles security vulnerabilities (findings) and bounties from multiple security and auditing firms in the web3 space.
 
 3. **Reproduce Exploits**
 
-   * Fork hacks from [rekt.news](https://rekt.news), write Foundry tests
+   * Fork hacks from [rekt.news](https://rekt.news), write Foundry tests to reproduce them.
+     - :fire:[DefiHackLabs](https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main) has reproduced most of past DeFi hack incidents using Foundry. This helps you study scripts used then use them to try and recreate the hacks/exploits.
+   * ✏️Shadow Auditing -  it's a technique where security researchers REDO a past completed contest, which already has its final report out.
+      - The 2 main benefits of Shadow Auditing are:-
+        * 📌You're simulating  a real contest
+        * 📌After completing the audit, you can IMMEDIATELY read the report.
+      - Perfoming a shadow audit dramatically increase your learning rate & progress and allows you to answer the following questions:
+         - 📌 what bugs you missed?
+         - 📌 why you missed them?
+         - 📌 what bugs you found and if they were described well?
+         - 📌 investigate the attack path of each finding?
+
+
+
 
 4. **Tool Mastery**
 
@@ -140,13 +180,19 @@ A professional auditor’s toolkit includes:
 
 5. **Join Audit Contests**
 
-   * Compete in Code4rena/Sherlock
-   * Learn from winning reports
+   There are 2 cool sites one can use to track public web3 security audit contests:
+    1) [Daily Warden](https://www.dailywarden.com/) - shows all active and upcoming security contests.
+    2) [VigilSeek](https://www.vigilseek.com/) - like an upgrade of daily warden, it has a feature to filter contests based on language, platform e.t.c
+### **NOTE:** 
+**:exclamation:Check out first flights by Cyfrin Codehawks: [codehawks first-flights](https://codehawks.cyfrin.io/first-flights) - These are beginner-friendly contest that helps one sharpen their auditing skills.**
+- Participate in a contest from one of the [platforms](https://github.com/0xDelvine/Chain-check-web3clubs-sessions/edit/main/session-1-intro-to-auditing.md#%EF%B8%8F-bug-bounty-platforms) mentioned above.
+- Learn from writing reports.
 
-6. **Build a Portfolio**
+7. **Build a Portfolio**(optional)
 
-   * Blog technical writeups
-   * Share GitHub reviews or test repos
+   1) Blog technical writeups
+   2) Share GitHub reviews or test repos
+   3) Track progress from your portfolio
 
 
 ## 💣 Case Studies – Notable Web3 Hacks
