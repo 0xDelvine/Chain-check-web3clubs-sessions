@@ -33,7 +33,7 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 | Role        | Security Researcher                  | Smart Contract Auditor                         |
 | ----------- | ------------------------------------ | ---------------------------------------------- |
 | Focus       | Exploiting unknown bugs in the wild  | Preventing exploits before or after deployment |
-| Process     | Open-ended, CTF-style investigation  | Structured, scoped, spec-aligned review        |
+| Process     | Open-ended investigation             | Structured, scoped, spec-aligned review        |
 | Deliverable | PoCs, CVEs, writeups, bounty reports | Formal reports with severity + mitigation      |
 | Environment | Deployed protocols, public targets   | Both deployed and protocols on testing phase.  |
 
@@ -143,10 +143,15 @@ A professional auditor’s toolkit includes:
    * Compete in audit & Bug bounty platforms Code4rena/Sherlock/Cantina
    * Learn from writing reports
 
-6. **Build a Portfolio**
+6. **Do CTF challs**
+   * [Ethernaut CTF](https://ethernaut.openzeppelin.com/) - by Openzeppelin
+   * [Damn Vulnable DeFi](damnvulnerabledefi.xyz)  
 
-   * Blog technical writeups
+7. **Build a Portfolio**
+
+   * Blog technical writeups - e.g on medium 
    * Share GitHub reviews or test repos
+   * Threas posts - on X
 
 
 ## 💣 Case Studies – Notable Web3 Hacks [rekt.news](https://rekt.news)
