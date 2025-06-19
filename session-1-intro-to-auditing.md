@@ -77,7 +77,7 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 
 
 ## Structure of a Professional Audit Report
-- Audit report format vary depending on the [platform](https://github.com/0xDelvine/Chain-check-web3clubs-sessions/edit/main/session-1-intro-to-auditing.md#%EF%B8%8F-bug-bounty-platforms).
+- Audit report format vary depending on the [platform](bug-bounty/contest-platforms).
 
 1. **Executive Summary**
 
