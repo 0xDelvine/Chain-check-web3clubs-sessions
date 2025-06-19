@@ -163,7 +163,8 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 
 6. **Do CTF challs**
    * [Ethernaut CTF](https://ethernaut.openzeppelin.com/) - by Openzeppelin
-   * [Damn Vulnable DeFi](damnvulnerabledefi.xyz)  
+   * [Damn Vulnable DeFi](damnvulnerabledefi.xyz)
+   * [Capture The Ether](https://capturetheether.com/challenges/)
 
 7. **Build a Portfolio**
 
