@@ -158,7 +158,7 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
      
 ### **NOTE:** 
 **Check out first flights by Cyfrin Codehawks: [codehawks first-flights](https://codehawks.cyfrin.io/first-flights) - These are beginner-friendly contest that helps one sharpen their auditing skills.**
-- Participate in a contest from one of the [platforms](https://github.com/0xDelvine/Chain-check-web3clubs-sessions/edit/main/session-1-intro-to-auditing.md#%EF%B8%8F-bug-bounty-platforms) mentioned above.
+- Participate in a contest from one of the [platforms](#bug-bountycontest-platforms) mentioned above.
 - Learn from writing reports.
 
 6. **Do CTF challs**
