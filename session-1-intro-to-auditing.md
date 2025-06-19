@@ -103,6 +103,7 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 4. **Appendices**
 
    *  Supplementary sections - threat models, gas optimizations, tool versions
+- The above tempelate can be accessed [here.](https://github.com/0xDelvine/Chain-check-web3clubs-sessions/blob/main/chaincheckImg/BestTemplate.md)
 
 ## 🧰 Platforms & Tools (with Links)
 
