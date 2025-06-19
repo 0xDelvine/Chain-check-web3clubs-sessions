@@ -173,7 +173,7 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
    * Threat posts - on X
 
 
-## Case Studies – Notable Web3 Hacks
+## Case Studies
 [Rekt News](https://rekt.news) is a media outlet that reports on hacks, exploits, and failures in the Web3, DeFi (Decentralized Finance), and crypto ecosystem. 
 On 17th June, 2025, [Meta Pool's](https://www.metapool.app/) light was dimmed with approximately $142k worth of assets across Ethereum and bridged L2 chains (i.e., Optimism and Linea). 
 ### What is Meta Pool?
