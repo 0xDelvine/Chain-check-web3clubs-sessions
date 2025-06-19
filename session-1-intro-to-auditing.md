@@ -105,34 +105,6 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 
 ## Roadmap to Becoming a Smart Contract Auditor
 
-1. **Understand Smart Contract Language** e.g Solidity + EVM Knowledge*
-Some of the resources to get you started in solidity:
-   - [Patrick Collins](https://x.com/PatrickAlphaC)
-     - Patrick Collins youtube channel : https://www.youtube.com/@PatrickAlphaC
-     - Cyfrin updraft: https://updraft.cyfrin.io
-   - CryptoZombie: http://cryptozombies.io
-   - Smart Contract Programmer - https://www.youtube.com/@smartcontractprogrammer
-   - Solidity Docs: https://docs.soliditylang.org/en/v0.8.11/
-   - Solidity-by-example: https://solidity-by-example.org
-   - Dapp University: https://www.youtube.com/@DappUniversity
-   - and many more resources you find best:smiley:
-=======
-### Formal Verification
-
-* [**Certora Prover**](https://www.certora.com/): Rule-based formal verification for business logic constraints.
-* [**Scribble**](https://github.com/ConsenSys/scribble): Specification language that compiles into runtime assertions for invariant testing.
-
-### Bug Bounty Platforms
-
-* [**Immunefi**](https://immunefi.com)
-* [**Cantina**](https://cantina.xyz)
-* [**Code4rena**](https://code4rena.com)
-* [**Codehawks**](https://codehawks.cyfrin.io/)
-* [**Sherlock**](https://audits.sherlock.xyz)
-* [**Hats Finance**](https://hats.finance):
-
-## Roadmap to Becoming a Smart Contract Auditor
-
 1. **Deepen Solidity + EVM Knowledge**
 
    * Understand storage layout, delegatecall, assembly, proxies
@@ -172,8 +144,8 @@ Some of the resources to get you started in solidity:
 
 4. **Tool Mastery**
 
-   * Use Slither, Semgrep for analysis
-   * Write fuzz tests in Echidna or Forge
+   * Use Slither, surya, audit wizard etc for analysis
+   * Write fuzz tests in Foundry, Hardhat etc
 
 5. **Join Audit Contests**
   
@@ -182,8 +154,9 @@ Some of the resources to get you started in solidity:
    * Learn from writing reports
 
   There are 2 cool sites one can use to track public web3 security audit contests:
-    1) [Daily Warden](https://www.dailywarden.com/) - shows all active and upcoming security contests.
-    2) [VigilSeek](https://www.vigilseek.com/) - like an upgrade of daily warden, it has a feature to filter contests based on language, platform e.t.c
+  1.  [Daily Warden](https://www.dailywarden.com/) - shows all active and upcoming security contests.
+  2.  [VigilSeek](https://www.vigilseek.com/) - like an upgrade of daily warden, it has a feature to filter contests based on language, platform e.t.c
+     
 ### **NOTE:** 
 **Check out first flights by Cyfrin Codehawks: [codehawks first-flights](https://codehawks.cyfrin.io/first-flights) - These are beginner-friendly contest that helps one sharpen their auditing skills.**
 - Participate in a contest from one of the [platforms](https://github.com/0xDelvine/Chain-check-web3clubs-sessions/edit/main/session-1-intro-to-auditing.md#%EF%B8%8F-bug-bounty-platforms) mentioned above.
