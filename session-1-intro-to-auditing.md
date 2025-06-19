@@ -2,7 +2,6 @@
 ----
 ## What is a Smart Contract Audit?
 
-
 A **smart contract audit** is a comprehensive security review of a contract's source code and architecture to identify vulnerabilities before or after deployment. It typically includes:
 
 * Business logic verification
@@ -36,7 +35,7 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 | Role        | Security Researcher                  | Smart Contract Auditor                         |
 | ----------- | ------------------------------------ | ---------------------------------------------- |
 | Focus       | Exploiting unknown bugs in the wild  | Preventing exploits before or after deployment |
-| Process     | Open-ended, CTF-style investigation  | Structured, scoped, spec-aligned review        |
+| Process     | Open-ended investigation             | Structured, scoped, spec-aligned review        |
 | Deliverable | PoCs, CVEs, writeups, bounty reports | Formal reports with severity + mitigation      |
 | Environment | Deployed protocols, public targets   | Both deployed and protocols on testing phase.  |
 
@@ -118,6 +117,26 @@ Some of the resources to get you started in solidity:
    - Solidity-by-example: https://solidity-by-example.org
    - Dapp University: https://www.youtube.com/@DappUniversity
    - and many more resources you find best:smiley:
+=======
+### Formal Verification
+
+* [**Certora Prover**](https://www.certora.com/): Rule-based formal verification for business logic constraints.
+* [**Scribble**](https://github.com/ConsenSys/scribble): Specification language that compiles into runtime assertions for invariant testing.
+
+### Bug Bounty Platforms
+
+* [**Immunefi**](https://immunefi.com)
+* [**Cantina**](https://cantina.xyz)
+* [**Code4rena**](https://code4rena.com)
+* [**Codehawks**](https://codehawks.cyfrin.io/)
+* [**Sherlock**](https://audits.sherlock.xyz)
+* [**Hats Finance**](https://hats.finance):
+
+## Roadmap to Becoming a Smart Contract Auditor
+
+1. **Deepen Solidity + EVM Knowledge**
+
+   * Understand storage layout, delegatecall, assembly, proxies
 
 2. **Study Real Audits**
 
@@ -139,6 +158,7 @@ Some of the resources to get you started in solidity:
 
 3. **Reproduce Exploits**
 
+
    * Fork hacks from [rekt.news](https://rekt.news), write Foundry tests to reproduce them.
      - [DefiHackLabs](https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main) has reproduced most of past DeFi hack incidents using Foundry. This helps you study scripts used then use them to try and recreate the hacks/exploits.
    * Shadow Auditing -  it's a technique where security researchers REDO a past completed contest, which already has its final report out.
@@ -157,8 +177,12 @@ Some of the resources to get you started in solidity:
    * Write fuzz tests in Echidna or Forge
 
 5. **Join Audit Contests**
+  
+   * Check out first flights by Cyfrin Codehawks: [codehawks first-flights](https://codehawks.cyfrin.io/first-flights)
+   * Compete in audit & Bug bounty platforms Code4rena/Sherlock/Cantina
+   * Learn from writing reports
 
-   There are 2 cool sites one can use to track public web3 security audit contests:
+  There are 2 cool sites one can use to track public web3 security audit contests:
     1) [Daily Warden](https://www.dailywarden.com/) - shows all active and upcoming security contests.
     2) [VigilSeek](https://www.vigilseek.com/) - like an upgrade of daily warden, it has a feature to filter contests based on language, platform e.t.c
 ### **NOTE:** 
@@ -166,11 +190,15 @@ Some of the resources to get you started in solidity:
 - Participate in a contest from one of the [platforms](https://github.com/0xDelvine/Chain-check-web3clubs-sessions/edit/main/session-1-intro-to-auditing.md#%EF%B8%8F-bug-bounty-platforms) mentioned above.
 - Learn from writing reports.
 
-7. **Build a Portfolio**(optional)
+6. **Do CTF challs**
+   * [Ethernaut CTF](https://ethernaut.openzeppelin.com/) - by Openzeppelin
+   * [Damn Vulnable DeFi](damnvulnerabledefi.xyz)  
 
-   1) Blog technical writeups
-   2) Share GitHub reviews or test repos
-   3) Track progress from your portfolio
+7. **Build a Portfolio**
+
+   * Blog technical writeups - e.g on medium 
+   * Share GitHub reviews or test repos
+   * Threat posts - on X
 
 
 ## Case Studies – Notable Web3 Hacks
@@ -183,5 +211,4 @@ Meta Pool is a multi-chain liquid staking protocol that offers liquid staking to
  Meta Pool has a staking contract that is based on OpenZeppelin’s ERC4626. It allows users to stake ETH and recieve a share token called mpETH representing their stake. This staking contract includes a  `mint()` function that the attacker exploited to mint ~9701 mpETH without providing any ETH, since it has no checks assertain that ETH was transferred before minting mpETH. This exploit led to a total loss of about 56.35 ETH across Ethereum and Layer 2s (Optimism and Linea).
  
 [Here](https://docs.metapool.app/master/security/audits/ethereum) is a full post-mortem of the incident that has been completed in collaboration with Blocksec team.
-
 
