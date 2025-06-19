@@ -1,6 +1,6 @@
-# 🛠 Session 1 – Introduction to Smart Contract Auditing
+# Session 1 – Introduction to Smart Contract Auditing
 ----
-## 🔍 What is a Smart Contract Audit?
+## What is a Smart Contract Audit?
 
 
 A **smart contract audit** is a comprehensive security review of a contract's source code and architecture to identify vulnerabilities before or after deployment. It typically includes:
@@ -15,7 +15,7 @@ A **smart contract audit** is a comprehensive security review of a contract's so
 
 Audits **reduce risk**, **build trust**, and are a **non-negotiable step** before launching production smart contracts.
 
-## 🛡️ Why Audits Are Critical in Web3
+## Why Audits Are Critical in Web3
 
 Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 
@@ -28,10 +28,10 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 * Fund drains (flash loans, logic errors, faulty access control)
 * Protocol takeovers (governance exploits)
 * User trust loss and regulatory scrutiny
-  ### :bangbang: **<ins>Disclaimer:</ins>    Doing audits isn’t just due diligence—it’s essential for every protocol.**
+  ### **<ins>Disclaimer:</ins>    Doing audits isn’t just due diligence—it’s essential for every protocol.**
   
 
-## 🧠 Security Researcher vs Smart Contract Auditor
+## Security Researcher vs Smart Contract Auditor
 
 | Role        | Security Researcher                  | Smart Contract Auditor                         |
 | ----------- | ------------------------------------ | ---------------------------------------------- |
@@ -46,7 +46,7 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
   ----
   ![](https://github.com/0xDelvine/Chain-check-web3clubs-sessions/blob/main/chaincheckImg/Screenshot%20From%202025-06-18%2015-14-02.png)
 
-## 🎯 Bug Bounty vs Audit
+## Bug Bounty vs Audit
 
 | Factor    | Bug Bounty                      | Formal Audit                             |
 | --------- | ------------------------------- | ---------------------------------------- |
@@ -55,7 +55,7 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 | Incentive | Pay-per-vuln                    | Paid engagement                          |
 | Guarantee | Opportunistic coverage          | Deterministic & scoped coverage          |
 
-### 🛡️ Bug Bounty/contest Platforms
+### Bug Bounty/contest Platforms
 1) [**Immunefi**](https://immunefi.com)
 2) [**Cantina**](https://cantina.xyz)
 3) [**Code4rena**](https://code4rena.com)
@@ -63,15 +63,15 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 5) [**Sherlock**](https://audits.sherlock.xyz)
 6) [**Hats Finance**](https://hats.finance)
 
-## ⚠️ Vulnerability Categories
+## Vulnerability Categories
 
-### 🧠 Logic Flaws
+### Logic Flaws
 
 * Misaligned reward distribution
 * Incomplete validation (e.g., uncapped mint, unrestricted governance)
 * Incorrect accounting/overflows with `unchecked` math
 
-### 🧨 Low-level Security Flaws
+### Low-level Security Flaws
 
 * Reentrancy (`call.value()` patterns or state-modification ordering)
 * Storage collisions in proxies
@@ -79,7 +79,7 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 * Malicious approvals (ERC20 nuances)
 
 
-## 📄 Structure of a Professional Audit Report
+## Structure of a Professional Audit Report
 - Audit report format vary depending on the [platform](https://github.com/0xDelvine/Chain-check-web3clubs-sessions/edit/main/session-1-intro-to-auditing.md#%EF%B8%8F-bug-bounty-platforms).
 
 1. **Executive Summary**
@@ -105,7 +105,7 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
    *  Supplementary sections - threat models, gas optimizations, tool versions
 - The above tempelate can be accessed [here.](https://github.com/0xDelvine/Chain-check-web3clubs-sessions/blob/main/chaincheckImg/BestTemplate.md)
 
-## 🗺 Roadmap to Becoming a Smart Contract Auditor
+## Roadmap to Becoming a Smart Contract Auditor
 
 1. **Understand Smart Contract Language** e.g Solidity + EVM Knowledge*
 Some of the resources to get you started in solidity:
@@ -140,19 +140,16 @@ Some of the resources to get you started in solidity:
 3. **Reproduce Exploits**
 
    * Fork hacks from [rekt.news](https://rekt.news), write Foundry tests to reproduce them.
-     - :fire:[DefiHackLabs](https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main) has reproduced most of past DeFi hack incidents using Foundry. This helps you study scripts used then use them to try and recreate the hacks/exploits.
-   * ✏️Shadow Auditing -  it's a technique where security researchers REDO a past completed contest, which already has its final report out.
+     - [DefiHackLabs](https://github.com/SunWeb3Sec/DeFiHackLabs/tree/main) has reproduced most of past DeFi hack incidents using Foundry. This helps you study scripts used then use them to try and recreate the hacks/exploits.
+   * Shadow Auditing -  it's a technique where security researchers REDO a past completed contest, which already has its final report out.
       - The 2 main benefits of Shadow Auditing are:-
-        * 📌You're simulating  a real contest
-        * 📌After completing the audit, you can IMMEDIATELY read the report.
+        * You're simulating  a real contest
+        * After completing the audit, you can IMMEDIATELY read the report.
       - Perfoming a shadow audit dramatically increase your learning rate & progress and allows you to answer the following questions:
-         - 📌 what bugs you missed?
-         - 📌 why you missed them?
-         - 📌 what bugs you found and if they were described well?
-         - 📌 investigate the attack path of each finding?
-
-
-
+         -  what bugs you missed?
+         -  why you missed them?
+         -  what bugs you found and if they were described well?
+         -  investigate the attack path of each finding?
 
 4. **Tool Mastery**
 
@@ -165,7 +162,7 @@ Some of the resources to get you started in solidity:
     1) [Daily Warden](https://www.dailywarden.com/) - shows all active and upcoming security contests.
     2) [VigilSeek](https://www.vigilseek.com/) - like an upgrade of daily warden, it has a feature to filter contests based on language, platform e.t.c
 ### **NOTE:** 
-**:exclamation:Check out first flights by Cyfrin Codehawks: [codehawks first-flights](https://codehawks.cyfrin.io/first-flights) - These are beginner-friendly contest that helps one sharpen their auditing skills.**
+**Check out first flights by Cyfrin Codehawks: [codehawks first-flights](https://codehawks.cyfrin.io/first-flights) - These are beginner-friendly contest that helps one sharpen their auditing skills.**
 - Participate in a contest from one of the [platforms](https://github.com/0xDelvine/Chain-check-web3clubs-sessions/edit/main/session-1-intro-to-auditing.md#%EF%B8%8F-bug-bounty-platforms) mentioned above.
 - Learn from writing reports.
 
@@ -176,13 +173,13 @@ Some of the resources to get you started in solidity:
    3) Track progress from your portfolio
 
 
-## 💣 Case Studies – Notable Web3 Hacks
+## Case Studies – Notable Web3 Hacks
 [Rekt News](https://rekt.news) is a media outlet that reports on hacks, exploits, and failures in the Web3, DeFi (Decentralized Finance), and crypto ecosystem. 
 On 17th June, 2025, [Meta Pool's](https://www.metapool.app/) light was dimmed with approximately $142k worth of assets across Ethereum and bridged L2 chains (i.e., Optimism and Linea). 
-### :thinking:What is Meta Pool?
+### What is Meta Pool?
 Meta Pool is a multi-chain liquid staking protocol that offers liquid staking tokens across networks like Ethereum, NEAR, Solana, Aurora, ICP, and more, along with features such as Vote-to-Earn through DAO governance rewards, liquidity pools for earning yield, and a restaking aggregator on Solana. 
 - Checkout there [documentation](https://docs.metapool.app/) for more info.
-### 🔥 Exploit Summary
+### Exploit Summary
  Meta Pool has a staking contract that is based on OpenZeppelin’s ERC4626. It allows users to stake ETH and recieve a share token called mpETH representing their stake. This staking contract includes a  `mint()` function that the attacker exploited to mint ~9701 mpETH without providing any ETH, since it has no checks assertain that ETH was transferred before minting mpETH. This exploit led to a total loss of about 56.35 ETH across Ethereum and Layer 2s (Optimism and Linea).
  
 [Here](https://docs.metapool.app/master/security/audits/ethereum) is a full post-mortem of the incident that has been completed in collaboration with Blocksec team.
