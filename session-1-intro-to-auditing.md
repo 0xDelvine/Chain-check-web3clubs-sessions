@@ -73,7 +73,6 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 
 * Reentrancy (`call.value()` patterns or state-modification ordering)
 * Storage collisions in proxies
-* Delegatecall injection
 * Malicious approvals (ERC20 nuances)
 
 
