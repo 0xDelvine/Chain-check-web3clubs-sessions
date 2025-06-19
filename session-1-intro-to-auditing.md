@@ -105,29 +105,6 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
    *  Supplementary sections - threat models, gas optimizations, tool versions
 - The above tempelate can be accessed [here.](https://github.com/0xDelvine/Chain-check-web3clubs-sessions/blob/main/chaincheckImg/BestTemplate.md)
 
-## 🧰 Platforms & Tools (with Links)
-
-A professional auditor’s toolkit includes:
-
-### 🔍 Static Analysis
-
-* [**Slither**](https://github.com/crytic/slither): Solidity static analyzer that detects reentrancy, uninitialized state, and more.
-* [**Mythril**](https://github.com/ConsenSys/mythril): Symbolic execution engine for EVM bytecode.
-* [**Securify**](https://securify.chainsecurity.com/): Static analysis platform with compliance-based checks.
-
-### 🔬 Fuzzing & Runtime Testing
-
-* [**Foundry (forge-fuzz)**](https://github.com/foundry-rs/foundry): Native fuzzing engine, cheatcodes, invariant testing for Solidity.
-* [**Echidna**](https://github.com/crytic/echidna): Property-based fuzzer designed specifically for smart contracts.
-
-### 📐 Formal Verification
-
-* [**Certora Prover**](https://www.certora.com/): Rule-based formal verification for business logic constraints.
-* [**Scribble**](https://github.com/ConsenSys/scribble): Specification language that compiles into runtime assertions for invariant testing.
-
-### 🛡️ Get protocols from [platfroms](https://github.com/0xDelvine/Chain-check-web3clubs-sessions/edit/main/session-1-intro-to-auditing.md#%EF%B8%8F-bug-bountycontest-platforms) mentioned above.
-
-
 ## 🗺 Roadmap to Becoming a Smart Contract Auditor
 
 1. **Understand Smart Contract Language** e.g Solidity + EVM Knowledge*
