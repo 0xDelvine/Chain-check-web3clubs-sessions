@@ -1,5 +1,4 @@
 # Session 1 – Introduction to Smart Contract Auditing
-----
 ## What is a Smart Contract Audit?
 
 A **smart contract audit** is a comprehensive security review of a contract's source code and architecture to identify vulnerabilities before or after deployment. It typically includes:
