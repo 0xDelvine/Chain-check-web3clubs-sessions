@@ -66,8 +66,8 @@ Web3 is trustless, permissionless, and high-stakes. Smart contracts:
 ### Logic Flaws
 
 * Misaligned reward distribution
-* Incomplete validation (e.g., uncapped mint, unrestricted governance)
-* Incorrect accounting/overflows with `unchecked` math
+* Input validation vulns (e.g., uncapped mint, unrestricted governance)
+* Incorrect accounting/overflows/underfows with `unchecked` math
 
 ### Low-level Security Flaws
 
